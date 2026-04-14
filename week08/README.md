@@ -30,8 +30,8 @@
 # === 安裝中文字型（Colab 環境需要，只要跑一次）===
 import matplotlib
 import matplotlib.font_manager as fm
-# 用 gdown 下載（Colab 預裝，能處理 Google Drive 大檔確認頁面）
-!gdown -q 1eGAsTN1HBpJAkeVM57_C7ccp7hbgSz3_ -O TaipeiSansTCBeta-Regular.ttf
+# 從課程 GitHub repo 直接下載字型（public repo，不需登入）
+!wget -q -O TaipeiSansTCBeta-Regular.ttf https://github.com/pychang-ai/114-2_DM/raw/main/data/TaipeiSansTCBeta-Regular.ttf
 fm.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')  # 註冊台北黑體到 matplotlib
 matplotlib.rc('font', family='Taipei Sans TC Beta')      # 設定為預設字型
 ```
